@@ -38,7 +38,6 @@ def main():
     students = []
     
     while True:
-        menu()
         choice = menu()
         
         if choice == 1:
