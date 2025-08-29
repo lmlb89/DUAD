@@ -8,7 +8,7 @@ def bubble_sort(list):
     n = len(list)
     
     for i in range(n): # O(n)
-        for j in range(0, n-i-1): # O(n)
+        for j in range(0, n-i-1): # O(n²)
             if list[j] > list[j+1]: # O(1)
                 list[j], list[j+1] = list[j+1], list[j] # O(1)
     
