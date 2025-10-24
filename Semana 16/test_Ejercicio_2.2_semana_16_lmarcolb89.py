@@ -8,38 +8,54 @@
 #    2. “Hola mundo” → “odnum aloH”
 
 import unittest
+from io import StringIO
+import sys
 
 def backwards_test():
     backwards = "Just testing, don't worry"
     return print(backwards[::-1])
-    return backwards[::-1]
 
+class TestBackwardsTest(unittest.TestCase):
+    
+    def test_output_contains_numbers_when_present(self):
+        captured_output = StringIO()
+        sys.stdout = captured_output
+        
+        backwards_test()
+        
+        output = captured_output.getvalue().strip()
+        sys.stdout = sys.__stdout__
+        
+        expected = "yrrow t'nod ,gnitset tsuJ"
+        self.assertEqual(output, expected)
+    
+    def test_lowercase_uppercase_preservation(self):
+        captured_output = StringIO()
+        sys.stdout = captured_output
+        
+        backwards_test()
+        
+        output = captured_output.getvalue().strip()
+        sys.stdout = sys.__stdout__
+        
+        self.assertTrue(output[0].islower())  
+        self.assertTrue(output[-1].isupper())  
+    
+    def test_long_string_reversal(self):
+        captured_output = StringIO()
+        sys.stdout = captured_output
+        
+        backwards_test()
+        
+        output = captured_output.getvalue().strip()
+        sys.stdout = sys.__stdout__
+        
+        original_length = len("Just testing, don't worry")
+        self.assertEqual(len(output), original_length)
+        
 
-def process_list(input_list):
-    processed_list = [item.upper() if isinstance(item, str) else item for item in input_list]
-    return processed_list[::-1]
-
-import unittest
-
-class TestProcessList(unittest.TestCase):
-
-    def test_numbers_in_list(self):
-        input_list = [1, 2, 3, 4, 5]
-        result = process_list(input_list)
-        expected = [5, 4, 3, 2, 1]
-        self.assertEqual(result, expected)
-
-    def test_lowercase_uppercase_mixed(self):
-        input_list = ['hello', 'WORLD', 'MIXEd', 'CASE']
-        result = process_list(input_list)
-        expected = ['CASE', 'MIXED', 'WORLD', 'HELLO']
-        self.assertEqual(result, expected)
-
-    def test_long_list(self):
-        input_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
-        result = process_list(input_list)
-        expected = ['J', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A']
-        self.assertEqual(result, expected)
+        self.assertEqual(output[0], 'y')  
+        self.assertEqual(output[-1], 'J')  
 
 if __name__ == '__main__':
     unittest.main()
