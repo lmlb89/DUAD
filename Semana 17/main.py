@@ -35,7 +35,7 @@ class FinanceApp:
             elif event == 'Add Income':
                 self._handle_add_movement('income', window)
             
-            elif event == 'Delete Selected':
+            elif event == 'Delete item(s)':
                 self._handle_delete_movements(window)
             
             elif event == 'Refresh':
