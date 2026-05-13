@@ -1,0 +1,60 @@
+<aside>
+💪🏽 Ejercicios
+
+1. Cree un algoritmo para ver un video en Youtube. Sea lo más especifico posible.
+
+1. Inicio
+2. Pensar en el video que quiere ver.
+3. Si tiene computadora:
+    1. Encender la computadora.
+    2. Accesar a Internet por medio de un navegador web.
+    3. Ingresar a [youtube.com](http://youtube.com/).
+4. Sino, si tiene tablet:
+    1. Encender la tablet.
+    2. Ingresar a la app de Youtube.
+5. Sino, si tiene smartphone:
+    1. Encender el smartphone.
+    2. Ingresar a la app de Youtube.
+6. Sino, si tiene smart TV:
+    1. Encender el smart TV.
+    2. Ingresar a la app de Youtube.
+7. Buscar el video que penso antes en la barra de busqueda.
+8. Dar click en reproducir.
+9. Fin
+
+Cree un algoritmo que describa su rutina diaria. Use condiciones, condiciones multiples y ciclos.
+
+Rutina Diaria 
+
+1. Inicio
+2. Despertar
+3. Salir de la cama
+4. Si me toca entrenar y tengo energia:
+    1. Ponerme la ropa de ejercicio
+    2. Encender la moto
+    3. Manejar hasta el lugar de entrenamiento
+    4. Hacer la clase de calistenia de 5am
+    5. Regresar a la casa
+5. Sino me toca entrenar:
+    1. Dormir un poco mas. 
+6. Desayunar
+7. Bañar a mis hijos y alistarlos
+    1. Bañar a Diego en la tina
+    2. Mudarlo
+    3. Bañar a Julian en la ducha
+    4. Mudarlo
+8. Encender la computadora para trabajar.
+9. Mientras este trabajando:
+    1. Revisar correos
+    2. Estar pendiente de la computadora y el celular del trabajo
+    3. Si tengo reuniones con clientes
+    4. Meterme a las reuniones
+10. Almorzar
+11. Apagar la computadora
+12. Cenar
+13. Estudiar
+14. Dormir a mis hijos
+15. Acostarse a dormir
+16. Fin
+
+</aside>
