@@ -1,0 +1,72 @@
+1. Cree un pseudocódigo que le pida un `precio de producto` al usuario, calcule su descuento y muestre el precio final tomando en cuenta que:
+    1. Si el precio es menor a 100, el descuento es del 2%.
+    2. Si el precio es mayor o igual a 100, el descuento es del 10%.
+    3. *Ejemplos*:
+        1. 120 → 108
+        2. 40 → 39.2
+
+Inicio
+
+Definir `precio_de_producto`
+Definir `descuento`
+Definir `precio_con_descuento`
+Mostrar "Ingrese precio de producto"
+Pedir `precio_de_producto`
+Si (`precio_de_producto` < 100) entonces:
+
+`descuento` = `precio_de_producto` * 0.02
+
+Sino
+       `descuento` = `precio_de_producto` * 0.10
+`precio_con_descuento` = `precio_de_producto` - `descuento`
+Mostrar "Su precio con descuento es:"
+Mostrar `precio_con_descuento`
+Fin
+
+1. Cree un pseudocódigo que le pida un `tiempo en segundos` al usuario y calcule si es menor o mayor a 10 minutos. Si es menor, muestre cuantos segundos faltarían para llegar a 10 minutos. Si es mayor, muestre “*Mayor*”.
+
+*Ejemplos*:
+
+1. 1040 → Mayor
+2. 140 → 460
+3. 599 → 1
+
+Inicio
+Definir `tiempo_en_segundos`
+Definir `diferencia`
+Mostrar "Ingrese tiempo en segundos"
+Pedir `tiempo_en_segundos`
+Si (`tiempo_en_segundos` < 600) entonces:
+
+       diferencia = 600 - tiempo en segundos
+       Mostrar diferencia
+       Mostrar "Estos segundos faltan para llegar a 10 minutos"
+Sino
+       Mostrar “*Mayor*”
+Fin
+
+1. Cree un algoritmo que le pida un numero al usuario, y realice una suma de cada numero del 1 hasta ese número ingresado. Luego muestre el resultado de la suma.
+
+3 → 6 (1 + 2 + 3)
+
+5 → 15 (1 + 2 + 3 + 4 + 5)
+
+12 → 78 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)
+
+Inicio
+Definir `numero`
+Definir `suma`
+Definir `contador`
+Mostrar "Ingrese numero"
+Pedir `numero`
+`Contador` = 1
+
+`suma` = 0
+Mientras que `contador` ≤ `numero` hacer:
+       `suma` = `suma` + `contador`
+       `contador` = `contador` + 1 
+
+`FinMientras`
+
+Mostrar  `suma`
+Fin
